@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Om os</title>
+    <meta name="description" content="Lær mere om dette projekt og holdet bag." />
+    <style>
+      :root { --fg:#1f2937; --muted:#6b7280; --accent:#2563eb; --bg:#ffffff; }
+      html,body { height:100%; }
+      body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+             color:var(--fg); background:var(--bg); line-height:1.6; }
+      header { border-bottom:1px solid #e5e7eb; }
+      .wrap { max-width: 860px; margin: 0 auto; padding: 1rem; }
+      nav a { color: var(--accent); text-decoration: none; font-weight: 600; }
+      nav a:hover { text-decoration: underline; }
+      h1 { font-size: clamp(1.8rem, 2.5vw + 1rem, 2.4rem); margin: 1rem 0; }
+      p { color: var(--fg); }
+      .muted { color: var(--muted); }
+      footer { border-top:1px solid #e5e7eb; margin-top: 3rem; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <nav>
+          <a href="index.html">Hjem</a>
+          <span class="muted"> / </span>
+          <span>Om os</span>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <h1>Om dette projekt</h1>
+      <p>
+        Denne side fortæller kort om projektet og formålet. Tilpas frit teksten
+        her, så den passer til dit indhold, brand og målgruppe.
+      </p>
+      <p class="muted">
+        Tip: Du kan også tilføje billeder, links og sektioner med teammedlemmer,
+        værdier og kontaktinformation.
+      </p>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <p class="muted">&copy; <span id="y"></span> Dit navn eller firma.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+  </body>
+  </html>
+
